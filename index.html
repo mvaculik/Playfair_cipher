@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>PLAYFAIR</title>
+
+</head>
+<body>
+
+   <div class="backg">
+       <section>
+           <h2>PLAYFAIR CIPHER</h2>
+        <div class="setColor">
+            <input id="input-color" type="color" data-color="dark" value="#212121">
+            <label class="input-color-label" for="input-color">
+                MATEJ VACULIK
+            </label>
+        </div>
+           <p></p>
+           <h3>ALLOWED CHARACTERS</h3>
+           <h3>A B C D E F G H I J K L M N O P R S T U V W X Y SPACE</h3>
+           <p></p>
+           <h4>YOU CAN ALSO USE DIACRITICS CHARACTERS BUT THEY WILL BE CHANGED TO STANDARD CHARACTERS</h4>
+           <p></p>
+           <h4>IF YOU ENTER NOT ALLOWED CHARACTERS WILL BE REMOVED!</h4>
+           <p></p>
+        </section>
+        <section style="height: 150px;" class="inputArea">
+            <textarea name="" id="input" cols="29" rows="2" placeholder="Enter your text..." required></textarea>
+            <!-- <h1 class="background-input">INPUT</h1> -->
+        </section>
+        <table id="adfgx_table">
+            <tbody>
+                <tr>
+                    <th><input class="th" autocomplete="off" readonly value=""></th>
+                    <th><input class="th" autocomplete="off" readonly value="0"></th>
+                    <th><input class="th" autocomplete="off" readonly value="1"></th>
+                    <th><input class="th" autocomplete="off" readonly value="2"></th>
+                    <th><input class="th" autocomplete="off" readonly value="3"></th>
+                    <th><input class="th" autocomplete="off" readonly value="4"></th>
+                </tr><tr>
+                    <th><input class="th" autocomplete="off" readonly value="0"></th>
+                    <td><input type="matrixChar" class="small" data-row="A" data-col="A" autocomplete="off" maxlength="1" readonly value="A"></td>
+                    <td><input type="matrixChar" class="small" data-row="A" data-col="D" autocomplete="off" maxlength="1" readonly value="B"></td>
+                    <td><input type="matrixChar" class="small" data-row="A" data-col="F" autocomplete="off" maxlength="1" readonly value="C"></td>
+                    <td><input type="matrixChar" class="small" data-row="A" data-col="G" autocomplete="off" maxlength="1" readonly value="D"></td>
+                    <td><input type="matrixChar" class="small" data-row="A" data-col="X" autocomplete="off" maxlength="1" readonly value="E"></td>
+                </tr><tr>
+                    <th><input class="th" autocomplete="off" readonly value="1"></th>
+                    <td><input type="matrixChar" class="small" data-row="D" data-col="A" autocomplete="off" maxlength="1" readonly value="F"></td>
+                    <td><input type="matrixChar" class="small" data-row="D" data-col="D" autocomplete="off" maxlength="1" readonly value="G"></td>
+                    <td><input type="matrixChar" class="small" data-row="D" data-col="F" autocomplete="off" maxlength="1" readonly value="H"></td>
+                    <td><input type="matrixChar" class="small" data-row="D" data-col="G" autocomplete="off" maxlength="1" readonly value="I"></td>
+                    <td><input type="matrixChar" class="small" data-row="D" data-col="X" autocomplete="off" maxlength="1" readonly value="J"></td>
+                </tr><tr>
+                    <th><input class="th" autocomplete="off" readonly value="2"></th>
+                    <td><input type="matrixChar" class="small" data-row="F" data-col="A" autocomplete="off" maxlength="1" readonly value="K"></td>
+                    <td><input type="matrixChar" class="small" data-row="F" data-col="D" autocomplete="off" maxlength="1" readonly value="L"></td>
+                    <td><input type="matrixChar" class="small" data-row="F" data-col="F" autocomplete="off" maxlength="1" readonly value="M"></td>
+                    <td><input type="matrixChar" class="small" data-row="F" data-col="G" autocomplete="off" maxlength="1" readonly value="N"></td>
+                    <td><input type="matrixChar" class="small" data-row="F" data-col="X" autocomplete="off" maxlength="1" readonly value="O"></td>
+                </tr><tr>
+                    <th><input class="th" autocomplete="off" readonly value="3"></th>
+                    <td><input type="matrixChar" class="small" data-row="G" data-col="A" autocomplete="off" maxlength="1" readonly value="P"></td>
+                    <td><input type="matrixChar" class="small" data-row="G" data-col="D" autocomplete="off" maxlength="1" readonly value="R"></td>
+                    <td><input type="matrixChar" class="small" data-row="G" data-col="F" autocomplete="off" maxlength="1" readonly value="S"></td>
+                    <td><input type="matrixChar" class="small" data-row="G" data-col="G" autocomplete="off" maxlength="1" readonly value="T"></td>
+                    <td><input type="matrixChar" class="small" data-row="G" data-col="X" autocomplete="off" maxlength="1" readonly value="U"></td>
+                </tr><tr>
+                    <th><input class="th" autocomplete="off" readonly value="4"></th>
+                    <td><input type="matrixChar" class="small" data-row="X" data-col="A" autocomplete="off" maxlength="1" readonly value="V"></td>
+                    <td><input type="matrixChar" class="small" data-row="X" data-col="D" autocomplete="off" maxlength="1" readonly value="W"></td>
+                    <td><input type="matrixChar" class="small" data-row="X" data-col="F" autocomplete="off" maxlength="1" readonly value="X"></td>
+                    <td><input type="matrixChar" class="small" data-row="X" data-col="G" autocomplete="off" maxlength="1" readonly value="Y"></td>
+                    <td><input type="matrixChar" class="small" data-row="X" data-col="X" autocomplete="off" maxlength="1" readonly value="Z"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="select">
+            <h3>SELECT MATRIX</h3>
+            <input class="cz" type="checkbox" value="CZ" id="langcz" name="check" onclick="onlyOne(this); cz()">
+            <label for="langcz">CZ</label> 
+            <input class="en" type="checkbox" value="EN" id="langen" name="check" onclick="onlyOne(this); en()">
+            <label for="langen">EN</label> 
+        </div>
+
+        <section>        
+            <input id="key" type="text" class="form-control" placeholder="Enter key" required>               
+        </section>
+
+        <section class="btnGroup">
+            <button class="btn btn-encrypt" onclick="encrypt()">ENCRYPT</button>
+            <button class="btn btn-decrypt" onclick="decrypt()">DECRYPT</button>
+            <button class="btn btn-decrypt" onclick="generateMatrix()">SAVE MATRIX</button>
+            <button class="btn" type="button" onclick="reload()">RESET</button>
+        </section>
+
+        <section style="height: 150px;" class="outputArea">
+            <textarea id="output" placeholder="Output.." readonly></textarea>
+            <!-- <h1 class="background-output">OUTPUT</h1> -->
+        </section>
+
+        
+    </div>
+
+    
+   
+</body>
+    <script src="color.js"></script>    
+    <script src="server.js"></script>
+    <script src="main.js"></script>
+    <script src="encrypt.js"></script>
+    <script src="decrypt.js"></script>
+
+</html>
